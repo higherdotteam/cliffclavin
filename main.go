@@ -44,4 +44,9 @@ func main() {
 	r, _ = reader.ReadString('\n')
 	fmt.Println(r)
 
+	writer.WriteString("QUIT\r\n")
+	writer.Flush()
+	r, _ = reader.ReadString('\n')
+	fmt.Println(r)
+
 }
